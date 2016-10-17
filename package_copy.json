@@ -1,0 +1,28 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "webpack a test",
+  "main": "main.js",
+  "scripts": {//npm run dev 命令行的简写
+    "dev": "webpack -w -p -d",//最基本的启动webpack的方法 -w 提供watch方法,实时进行打包更新  -p 对打包后的文件进行压缩  -d提供source map(未压缩的打包文件)，方便调式代码
+    "deploy": ""
+  },
+  "keywords": [
+    "webpack",
+    "study"
+  ],
+  "author": "ty",
+  "license": "ISC",
+  "devDependencies": {//如果要把安装记录到这个属性需要输入命令：例如：npm install webpack --save-dev
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "css-loader": "^0.25.0",
+    "gulp": "^3.9.1",
+    "jsx-loader": "^0.13.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {//如果要把安装记录到这个属性需要输入命令：例如：npm install webpack --save
+    "react": "^0.14.8"
+  }
+}
